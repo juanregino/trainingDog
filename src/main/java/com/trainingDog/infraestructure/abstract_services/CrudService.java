@@ -1,5 +1,7 @@
 package com.trainingDog.infraestructure.abstract_services;
 
+import java.util.List;
+
 import org.springframework.data.domain.Page;
 
 public interface CrudService<RQ, RS, ID> {
@@ -12,5 +14,5 @@ public interface CrudService<RQ, RS, ID> {
 
   public void delete(ID id);
 
-  public Page<RS> getAll(int page, int size);
+  public List<RS> getAll();
 }

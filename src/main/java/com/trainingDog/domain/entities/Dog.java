@@ -35,7 +35,7 @@ public class Dog {
    @Column(length = 100, nullable = false)
    private String breed;
    @Column(length = 100, nullable = false)
-   private Integer age;
+   private int age;
    @Column(length = 100, nullable = false)
    @Enumerated(EnumType.STRING)
    private TrainingLevel trainingLevel;

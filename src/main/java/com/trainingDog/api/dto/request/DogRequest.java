@@ -23,7 +23,7 @@ public class DogRequest {
   @Size(min = 1, max = 100, message = "Breed must be between 1 and 100 characters")
   private String breed;
   @NotNull(message = "Age is required")
-  private Integer age;
+  private int age;
   @NotNull(message = "TrainingLevel is required")
   private TrainingLevel trainingLevel;
   @NotNull(message = "UserId is required")
