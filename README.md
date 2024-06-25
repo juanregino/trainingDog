@@ -24,9 +24,7 @@ Follow these steps to install and run the Training Dog project in your local dev
     mvn clean install
     ```
 
-### Starting the Services
-
-After initializing Docker, follow these steps to start each microservice in the required order:
+### Starting the Service
 
 1. **Training Dog**:
     ```bash
