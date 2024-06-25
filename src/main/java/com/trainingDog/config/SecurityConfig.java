@@ -39,7 +39,8 @@ public class SecurityConfig {
   private static final String[] ADMIN_RESOURCES = {
       "/admin/**",
       "/training-program/**",
-      "/educational-resource/**"
+      "/educational-resource/**",
+      "/training/**"
   };
 
   // Rutas para entrenadores
