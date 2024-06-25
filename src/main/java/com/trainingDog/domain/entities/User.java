@@ -60,9 +60,7 @@ public class User  implements UserDetails{
   private List<EducationalResource> educationalResources;
 @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
-    /**
-     * SimpleGrantedAuthority permite registrar el permiso
-     */
+    
     return List.of(new SimpleGrantedAuthority(this.role.name()));
   }
 

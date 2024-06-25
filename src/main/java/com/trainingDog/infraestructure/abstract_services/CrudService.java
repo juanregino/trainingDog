@@ -2,7 +2,6 @@ package com.trainingDog.infraestructure.abstract_services;
 
 import java.util.List;
 
-import org.springframework.data.domain.Page;
 
 public interface CrudService<RQ, RS, ID> {
 

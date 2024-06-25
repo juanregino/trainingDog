@@ -23,7 +23,7 @@ public class TrainingProgramMapper {
    private final DogRepository dogRepository;
   public TrainingPBasicResponse toResponse (TrainingProgram entity){
     return TrainingPBasicResponse.builder()
-          .description(entity.getDescription())
+          
           .id(entity.getId())
           .build();
   }
@@ -33,7 +33,7 @@ public class TrainingProgramMapper {
 
     User user = this.userRepository.findById(request.getUserId()).orElseThrow(()-> new IdNotFoundException("User not found", request.getUserId()));
     return TrainingProgram.builder()
-          .description(request.getDescription())
+          
           .dog(dog) 
           .trainer(user)
           .build();
